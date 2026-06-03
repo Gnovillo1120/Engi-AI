@@ -1,6 +1,6 @@
-# EngineeringMentor AI
+# Enggi AI
 
-EngineeringMentor AI is a full-stack web application designed to help Computer Science and Engineering students prepare for internships and entry-level engineering roles.
+Engi AI is a full-stack web application designed to help Computer Science and Engineering students prepare for internships and entry-level engineering roles.
 
 The platform provides personalized career guidance through resume analysis, learning roadmaps, interview preparation, progress tracking, and AI-powered recommendations.
 
