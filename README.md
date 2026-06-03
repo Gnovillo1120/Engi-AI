@@ -1,36 +1,211 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EngineeringMentor AI
 
-## Getting Started
+EngineeringMentor AI is a full-stack web application designed to help Computer Science and Engineering students prepare for internships and entry-level engineering roles.
 
-First, run the development server:
+The platform provides personalized career guidance through resume analysis, learning roadmaps, interview preparation, progress tracking, and AI-powered recommendations.
+
+## Current Features
+
+### Authentication
+
+* Email/password authentication
+* Google sign-in
+* Secure session management
+* Protected routes
+
+### User Profiles
+
+* Automatic profile creation after signup
+* Target role selection
+* Persistent profile storage
+
+### Dashboard
+
+* Personalized greeting
+* Target role display
+* Progress tracking foundation
+* Interactive dashboard components
+* Responsive sidebar navigation
+
+### Settings
+
+* Update target engineering role
+* Profile management
+
+### Database
+
+* PostgreSQL database hosted on Neon
+* Prisma ORM integration
+* Persistent user profile storage
+
+---
+
+## Planned Features
+
+### Resume Analysis
+
+* PDF resume upload
+* AI-powered resume review
+* Resume scoring
+* Skill gap detection
+
+### Personalized Roadmaps
+
+* Career-specific learning plans
+* Weekly action plans
+* Progress tracking
+
+### Interview Preparation
+
+* Behavioral interview practice
+* Technical interview practice
+* AI-generated feedback
+
+### GitHub Repository Review
+
+* Repository analysis
+* Project recommendations
+* Resume impact evaluation
+
+### Future Features
+
+* LeetCode tutoring
+* Internship application tracker
+* AI career coaching agent
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* Next.js 16
+* React
+* TypeScript
+* Tailwind CSS
+
+### Authentication
+
+* Clerk
+
+### Database
+
+* PostgreSQL (Neon)
+
+### ORM
+
+* Prisma
+
+### Version Control
+
+* Git
+* GitHub
+
+### Future Integrations
+
+* OpenAI API
+* Resume parsing tools
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/engineering-mentor-ai.git
+```
+
+Navigate into the project:
+
+```bash
+cd engineering-mentor-ai
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file in the project root and add:
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+DATABASE_URL=
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+├── dashboard/
+├── login/
+├── roadmap/
+├── resume/
+├── settings/
+├── signup/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+components/
+├── dashboard/
+├── settings/
+├── ui/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+lib/
+├── prisma.ts
+├── profile.ts
 
-## Deploy on Vercel
+prisma/
+├── schema.prisma
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Status
+
+### Completed
+
+* Landing page
+* Authentication system
+* Protected routes
+* Database setup
+* Profile creation
+* Settings page
+* Dashboard foundation
+
+### In Progress
+
+* Resume upload system
+
+### Planned
+
+* AI resume analysis
+* Roadmap generation
+* Interview preparation
+* GitHub project review
+
+---
+
+## Author
+
+Developed by Guillermo Novillo
+
+University of Florida
+Computer Science Student
+
+Summer 2026 – Present
