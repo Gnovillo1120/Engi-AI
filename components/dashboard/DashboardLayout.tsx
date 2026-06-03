@@ -54,7 +54,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
           <div className="mt-20">
             <Link
-              href="#"
+              href="/settings"
               className="group relative flex items-center gap-3 overflow-hidden rounded-xl border border-transparent px-4 py-3 text-[#c8c2ff]/70 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400/40 hover:bg-indigo-500/10 hover:text-[#f3f0ff] hover:shadow-lg hover:shadow-indigo-500/10"
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-indigo-300/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
