@@ -2,19 +2,20 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import EngiWordmark from "@/components/ui/EngiWordmark";
 
 type DashboardLayoutProps = {
   children: React.ReactNode;
 };
 
 const navItems = [
-  { label: "Dashboard", icon: "▦", href: "/dashboard" },
-  { label: "Resume Review", icon: "▤", href: "/resume" },
-  { label: "Roadmap", icon: "◇", href: "/roadmap" },
-  { label: "Mock Interview", icon: "○", href: "#" },
-  { label: "LeetCode Tutor", icon: "</>", href: "#" },
-  { label: "GitHub Review", icon: "⌁", href: "#" },
-  { label: "Progress", icon: "▥", href: "#" },
+  { label: "Dashboard",      icon: "▦",    href: "/dashboard" },
+  { label: "Resume Review",  icon: "▤",    href: "/resume" },
+  { label: "Roadmap",        icon: "◇",    href: "/roadmap" },
+  { label: "Mock Interview", icon: "○",    href: "#" },
+  { label: "LeetCode Tutor", icon: "</>",  href: "#" },
+  { label: "GitHub Review",  icon: "⌁",    href: "#" },
+  { label: "Progress",       icon: "▥",    href: "#" },
 ];
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
@@ -28,9 +29,12 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             sidebarOpen ? "w-64 p-6" : "w-0 p-0"
           }`}
         >
-          <h1 className="mb-8 whitespace-nowrap text-sm font-bold tracking-[0.2em] text-indigo-300">
-            ENGINEERINGMENTOR
-          </h1>
+          {/* ── Engi wordmark replaces the old plain-text logo ── */}
+          <div className="mb-8 whitespace-nowrap">
+            <Link href="/">
+              <EngiWordmark size="sm" />
+            </Link>
+          </div>
 
           <nav className="space-y-2">
             {navItems.map((item) => (
@@ -40,14 +44,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 className="group relative flex items-center gap-3 overflow-hidden rounded-xl border border-transparent px-4 py-3 text-[#c8c2ff]/70 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400/40 hover:bg-indigo-500/10 hover:text-[#f3f0ff] hover:shadow-lg hover:shadow-indigo-500/10"
               >
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-indigo-300/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-
-                <span className="relative z-10 w-6 text-indigo-300/80">
-                  {item.icon}
-                </span>
-
-                <span className="relative z-10 whitespace-nowrap">
-                  {item.label}
-                </span>
+                <span className="relative z-10 w-6 text-indigo-300/80">{item.icon}</span>
+                <span className="relative z-10 whitespace-nowrap">{item.label}</span>
               </Link>
             ))}
           </nav>
