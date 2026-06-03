@@ -1,4 +1,4 @@
-# Enggi AI
+# Engi AI
 
 Engi AI is a full-stack web application designed to help Computer Science and Engineering students prepare for internships and entry-level engineering roles.
 
